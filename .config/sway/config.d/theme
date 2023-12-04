@@ -1,0 +1,30 @@
+# GTK Theming
+exec_always ~/.config/sway/scripts/gsettings
+
+default_border pixel 2
+# default_border none
+# for_window [class=".*"] border pixel 2
+default_floating_border none 
+# smart_gaps on
+# hide_edge_borders smart
+gaps inner 2
+gaps outer 0
+gaps bottom 1
+gaps top 1
+
+# SwayFx options
+corner_radius 12
+smart_corner_radius on
+shadows off
+shadow_blur_radius 0
+shadow_color #303446
+
+# Sway Theming
+# Nord
+client.focused          #00085e #00085e #00085e #00085e #00085e
+client.unfocused        #2e3440 #2e3440 #2e3440 #2e3440 #2e3440
+client.focused_inactive #3b4252 #3b4252 #3b4252 #3b4252 #3b4252
+
+# Title format for windows
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"
