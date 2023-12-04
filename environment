@@ -1,0 +1,17 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+
+PATH="$HOME/.local/bin/:$PATH"
+PATH="$HOME/.local/bin/:$PATH"
+TDESKTOP_DISABLE_GTK_INTEGRATION=1
+OSU_SONG_FOLDER=/media/mass/bald/songs
+QT_QPA_PLATFORMTHEME=qt5ct
+CLUTTER_BACKEND="wayland"
+BEMENU_BACKEND="wayland"
+QT_QPA_PLATFORM="wayland-egl"
+XDG_CURRENT_DESKTOP=sway
+XDG_SESSION_TYPE=wayland
+WINIT_UNIX_BACKEND="wayland"
