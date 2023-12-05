@@ -1,15 +1,15 @@
 /* General configuration */ * {
   border: none;
-  font-family: "Inter";/*"Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";*/
+  font-family: "Inter", "SF Pro Display";/*"Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";*/
   font-size: 14px;
   font-weight: normal;
 }
 
 window#waybar {
-  background: rgba(30, 30, 46, 1.0);
+  background: rgba(30, 30, 46, 0.6);
   transition-property: background-color;
   transition-duration: .5s;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 12px 12px 12px 12px;
 }
 
 window#waybar.hidden {
@@ -26,23 +26,28 @@ tooltip label {
 
 /* Workspaces */
 #workspaces {
-  padding: 0 12px;
+  background: rgba(30, 30, 46, 0.8);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
 }
 
 #workspaces button {
-  min-width: 10px;
-  color: #f9e2af;
-  padding: 0 12px;
+  min-width: 8px;
+  color: rgb(82, 152, 161);
+  padding: 0 8px;
 }
 #workspaces button:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 #workspaces button.focused {
-  color: #a6e3a1;
+  color: #00ccff;
+  background-color: darkslategrey;
+  border-radius: 8px;
 }
 #workspaces button.urgent {
-  color: #f38ba8;
+  color: #f38b8b;
 }
 #workspaces button.persistent {
   color: #45475a;
@@ -53,14 +58,18 @@ window#waybar.empty #window {
 }
 
 /* Logo */
-#image-logo {
+/* #image-logo {
  padding: 0 12px;
-}
+}*/
 
 #window {
+  background: rgba(30, 30, 46, 0.8);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
   color: #b4befe;
   padding: 0 12px;
-}
+} 
 
 /* Language */
 #language {
@@ -122,16 +131,25 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background-color: #45475a;
+  background: rgba(30, 30, 46, 0.8);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
   margin-right: 5px;
+  margin-left: 5px;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
+  background: rgba(30, 30, 46, 0.8);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
   color: #cdd6f4;
   font-family: "Inter Black";
   font-size: 18px;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
@@ -160,6 +178,10 @@ window#waybar.empty #window {
 
 /* Power */
 #custom-power {
+  background: rgba(30, 30, 46, 0.8);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
   font-size: 18px;
   color: #f38ba8;
   padding: 0 12px;

@@ -9,17 +9,17 @@
   "width": "",
   "spacing": 0,
   "margin": 0,
-  "margin-top": 0,
-  "margin-bottom": 0,
-  "margin-left": 0,
-  "margin-right": 0,
+  "margin-top": 4,
+  "margin-bottom": 1,
+  "margin-left": 4,
+  "margin-right": 4,
   "fixed-center": true,
   "ipc": true,
   "bar_id": "bar-0",
 
   "modules-left": ["sway/workspaces", "image/logo"],
   "modules-center": ["sway/window"],
-  "modules-right": ["custom/spotify", "sway/language", "idle_inhibitor", "cpu", "pulseaudio", "tray", "clock", "custom/power"],
+  "modules-right": ["custom/spotify", "sway/language", "idle_inhibitor", "cpu", "tray", "clock", "custom/power"],
   
   "sway/workspaces": {
     "disable-scroll": false,
@@ -34,7 +34,7 @@
     "format": "{icon}",
     "format-icons": {
       "1": "1",
-      "2": "2",
+      "2": "󰞷",
       "3": "3",
       "4": "4",
       "5": "5"
@@ -82,6 +82,7 @@
         "today":      "<span color='#e78284'><b><u>{}</u></b></span>"
         }
       }
+
     },
 
   "cpu": {
@@ -163,6 +164,16 @@
     "smooth-scrolling-threshold": 1
     },
 
+    "wireplumber": {
+      "scroll-step": 1,
+        "format": "{volume}% {icon}",
+      "format-muted": "婢 {format_source}",
+        "format-icons": ["", "", ""],
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5",
+      "on-click": "killall pavucontrol; pavucontrol"
+      },
+
   "image/logo": {
     "path": "$HOME/.config/sway/swaywm.png",
     "size": 18,
@@ -207,17 +218,17 @@
     "width": "",
     "spacing": 0,
     "margin": 0,
-    "margin-top": 0,
-    "margin-bottom": 0,
-    "margin-left": 0,
-    "margin-right": 0,
+    "margin-top": 4,
+    "margin-bottom": 1,
+    "margin-left": 4,
+    "margin-right": 4,
     "fixed-center": true,
     "ipc": true,
     "bar_id": "bar-1",
   
     "modules-left": ["sway/workspaces", "image/logo"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/spotify", "sway/language", "idle_inhibitor", "cpu", "pulseaudio", "tray", "clock", "custom/power"],
+    "modules-right": ["custom/spotify", "sway/language", "idle_inhibitor", "cpu", "tray", "clock", "custom/power"],
     
     "sway/workspaces": {
       "disable-scroll": false,
