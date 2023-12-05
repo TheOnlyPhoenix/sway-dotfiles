@@ -1,7 +1,7 @@
 # GTK Theming
 exec_always ~/.config/sway/scripts/gsettings
 
-default_border pixel 2
+default_border pixel 4
 # default_border none
 # for_window [class=".*"] border pixel 2
 default_floating_border none 
@@ -9,8 +9,10 @@ default_floating_border none
 # hide_edge_borders smart
 gaps inner 2
 gaps outer 0
-gaps bottom 1
+gaps bottom 2
 gaps top 1
+gaps right 2
+gaps left 2
 
 # SwayFx options
 corner_radius 12

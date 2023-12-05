@@ -31,6 +31,8 @@ bindsym $mod+w kill
 
 # Hide/Show waybar
 bindsym $mod+c exec pkill -SIGUSR1 '^waybar$'
+bindsym $mod+Ctrl+1 exec pkill -SIGUSR2 waybar>
+
 
 # Cheatsheet
 bindsym $mod+x exec 'nwg-wrapper -t bindings.pango -c bindings.css -p left -ml 1350'
@@ -41,6 +43,9 @@ bindsym $mod+p exec $menu
 
 # Firefox
 bindsym $mod+KP_End exec firefox
+
+# Discord
+bindsym $mod+KP_Down exec discord
 
 # File manager
 bindsym $mod+i exec dolphin
